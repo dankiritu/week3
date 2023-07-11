@@ -1,0 +1,100 @@
+# Flatdango Movie Ticket Booking App
+
+Flatdango is a web application that allows users to view movie details, check available tickets, and purchase tickets for movies showing at the Flatiron Movie Theater.
+
+![Flatdango](images/flatdango-screenshot.png)
+
+## Features
+
+- View movie details, including the poster, title, runtime, showtime, and available tickets.
+- Browse a menu of all movies and select a movie to display its details.
+- Purchase tickets for a movie, with real-time updates of the available tickets.
+- (Bonus) Movies that are sold out are indicated in the movie menu and the "Buy Ticket" button is disabled.
+- (Extra Bonus) The number of tickets sold is persisted on the server.
+
+## Technologies Used
+
+- HTML/CSS/JavaScript
+- JSON DB Server
+- Fetch API
+- Git/GitHub
+
+## Getting Started
+
+### Prerequisites
+
+To run the Flatdango application locally, you need to have the following installed:
+
+- A modern web browser (e.g., Chrome, Firefox, Safari)
+
+### Installation
+
+1. Clone the GitHub repository:
+
+   ```bash
+   git clone https://github.com/your-username/flatdango.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd flatdango
+   ```
+
+3. Open the `index.html` file in your preferred web browser.
+
+## Usage
+
+Upon opening the application, you will see the details of the first movie, including its poster, title, runtime, showtime, and available tickets. The movie menu on the left side of the page lists all available movies.
+
+To view the details of a specific movie, click on the movie title in the movie menu. The details section will update to show the selected movie's information.
+
+To purchase a ticket, click the "Buy Ticket" button. The number of available tickets will decrease, and if the movie becomes sold out, the button will be disabled.
+
+## File Structure
+
+The project files are organized as follows:
+
+```
+├── index.html
+├── styles.css
+├── script.js
+└── images
+    └── flatdango-screenshot.png
+```
+
+- `index.html`: The main HTML file that defines the structure and content of the application.
+- `styles.css`: The CSS file that contains the styles for the application's layout and elements.
+- `script.js`: The JavaScript file that handles the dynamic functionality and API requests.
+- `images/`: A directory that contains the screenshot of the application.
+
+## API Endpoints
+
+The Flatdango application interacts with the following API endpoints:
+
+- `GET /films/1`: Retrieves the details of the first movie.
+- `GET /films`: Retrieves the data for all movies.
+- `PATCH /films/:id`: Updates the number of tickets sold for a specific movie.
+- `DELETE /films/:id`: Deletes a movie from the server.
+
+Please note that for demonstration purposes, the provided code assumes the existence of a local JSON DB server with the necessary endpoints.
+
+## Contributing
+
+Contributions to the Flatdango project are welcome! If you have any ideas, improvements, or bug fixes, please submit a pull request. For major changes, please open an issue first to discuss the proposed changes.
+
+## License
+
+The Flatdango Movie Ticket Booking App is open source and available under the [MIT License](LICENSE).
+
+## Acknowledgements
+
+- The Flatdango app was created as part of an assessment project for a web development course.
+
+## Contact
+
+If you have any questions, suggestions, or feedback, please feel free to contact the project maintainer at your-email@example.com.
+
+---
+
+Thank you for using Flatdango! We hope you enjoy your movie ticket booking experience.
